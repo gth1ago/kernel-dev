@@ -39,7 +39,7 @@ static void __exit hellokernelmod_exit(void){
 
 MODULE_AUTHOR("Gabriel Thiago <gth1ago>");
 MODULE_DESCRIPTION("Simple Kernel Module to display messages.");
-MODULE_LICENSE("MIT");
+MODULE_LICENSE("GPL");
 
 
 // Registering our functions to be executed in the beginning and in the exit of the module.
