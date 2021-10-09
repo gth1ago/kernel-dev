@@ -18,9 +18,9 @@ To see if was load successfully use lsmod tool
 ``` bash
    $ lsmod
 ``` 
-This will list all kernl modules loaded in your system
+This will list all kernel modules loaded in your system
 
-Now, to see wee message "Hello Kernel!", use the dmesg tool
+Now, to see we message "Hello Kernel!", use the dmesg tool
 ``` bash
    $ dmesg
 ```
