@@ -1,0 +1,6 @@
+Compilling Kerner Version
+
+By default, gcc on your system may look for the kernel headers in their default location 
+    rather than where you installed the new copy of the kernel (usually in /usr/src/. 
+    This can be fixed by using gcc's -I switch.
+
