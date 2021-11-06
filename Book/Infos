@@ -1,0 +1,18 @@
+Compilling Kerner Version
+
+By default, gcc on your system may look for the kernel headers in their default location 
+    rather than where you installed the new copy of the kernel (usually in /usr/src/. 
+    This can be fixed by using gcc's -I switch.
+
+----------------------------------------------------
+
+Kernel Modules work a bit differently of program usually. A module always beegin with either the 
+init_module or the function you specify with module_init call. This is the entry function for modules;
+it tells the kernel what functionality the module provides and sets up the kernel to run the module's
+function when they're needed. Once it does this, entry functionn returns and the module does nothing 
+until the kernel wants to do something with the code that the module provides
+
+All modules end by calling either cleanup_module or the function you specify with the module_exit call.
+It undoes whatever entry function did. It unregisters the functionalit what the entry function registered.
+
+Every module must have an entry function and an exit function.
